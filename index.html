@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceramah Berbayar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Ceramah Berbayar</h1>
+            <p>Dapatkan ilmu dari penceramah profesional! Tempah slot anda sekarang.</p>
+        </div>
+    </header>
+
+    <!-- Landing Section -->
+    <section class="landing">
+        <div class="container">
+            <h2>Maklumat Ceramah</h2>
+            <ul>
+                <img src="en.sabri.jpeg" alt="en.sabri bin saep" style="width:150px; border-radiuxs:8p; margin-top:5px;">
+                <li><strong>Tajuk:</strong> Komuniti Bersih , Hidup Sihat</li>
+                <li><strong>Penceramah:</strong>EN.SBRI BIN SAEP</li>
+                <li><strong>Sinopsis:</strong> Ceramah ini tentang kepentingan gotong-royong dan kerjasama dalam masyarakat.</li>
+                <li><strong>Logistik:</strong> 11 Februari 2026, 10:00 AM, Dewan sekolah menangah</li>
+                <li><strong>Yuran:</strong> RM 2,500.00</li>
+                <li><strong>Hubungan:</strong> info@ceramah.com | 012-3456649</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking">
+        <div class="container">
+            <h2>Tempah Slot Anda</h2>
+            <form id="bookingForm" action="process.php" method="POST" enctype="multipart/form-data">
+                <label for="fullName">Nama Penuh:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Alamat E-mel:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Nombor Telefon:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="category">Kategori Peserta:</label>
+                <select id="category" name="category" required>
+                    <option value="">-- Pilih --</option>
+                    <option value="Pelajar">Pelajar</option>
+                    <option value="Pensyarah">Pensyarah</option>
+                    <option value="Orang Awam">Orang Awam</option>
+                    <option value="Korporat">Korporat</option>
+                </select>
+
+                <label for="slots">Bilangan Slot:</label>
+                <input type="number" id="slots" name="slots" min="1" required>
+
+                <label for="payment">Bukti Pembayaran:</label>
+                <input type="file" id="payment" name="payment" required>
+
+                <label class="terms">
+                    <input type="checkbox" name="terms" required> Saya bersetuju dengan Terma & Syarat
+                </label>
+
+                <button type="submit">Hantar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ceramah Berbayar. Semua Hak Terpelihara.</p>
+        </div>
+    </footer>
+</body>
+</html>
